@@ -68,6 +68,7 @@ form input{
     color: white;
     outline: none;
     font-size: 1rem;
+    border: 2px white transparent;
 }
 
 form input:nth-child(2){
@@ -84,9 +85,30 @@ input::placeholder{
     flex-direction: column;
 }
 
+.content-input:focus{
+    outline-color: pink;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+}
+
+.priority-input:focus{
+    outline-color: pink;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.7rem;
+}
+
 button i{
     color: white;
     font-size: 1.5rem;
+}
+
+button{
+    background-color: #1a1a1a;
+    border: none;
 }
 
 form{
@@ -98,7 +120,7 @@ form{
 .main-todos{
     flex: 1 0 auto;
     overflow: auto;
-    border-bottom: thin #ccc solid;
+    border-bottom: thin pink solid;
     margin-bottom: 1rem;
     padding-top: 1rem;
 }
